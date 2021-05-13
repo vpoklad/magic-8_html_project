@@ -1,17 +1,13 @@
 // Colors
 :root {
   --bgColor: #fffff9;
-  --primaryFontColor: #2e2520;
-  --secondaryFontColor: #000000;
+  --fontColor: #2e2520;
 
   --btnColor: #ab816c; //колір кнопки
-  --btnHoverColor: #876655; //колір кнопки при ховері
-  --btnActiveColor: #674d40; //колір кнопки при кліканні
-  //В "About Us"  Read More i Less - це кнопки. Кольори застосовувати як в кнопках при ховері і кліканні.
-  --menuHoverColor: #876655; //при ховері
-  --menuActiveColor: #674d40; //при кліканні
+  --hoverColor: #876655; //колір кнопки при ховері
+  --activeColor: #674d40; //колір кнопки при кліканні
 
-  --buttonFontColor: #ffffff;
+  --btnFontColor: #ffffff;
   --placeholderColor: rgba(171, 129, 108, 0.5);
 
   // Fonts
