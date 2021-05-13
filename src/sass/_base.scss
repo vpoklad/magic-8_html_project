@@ -8,6 +8,32 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  // Colors
+
+  --bgColor: #fffff9;
+  --primaryFontColor: #2e2520;
+  --secondaryFontColor: #000000;
+
+  --btnColor: #ab816c; //колір кнопки
+  --btnHoverColor: #876655; //колір кнопки при ховері
+  --btnActiveColor: #674d40; //колір кнопки при кліканні
+  //В "About Us"  Read More i Less - це кнопки. Кольори застосовувати як в кнопках при ховері і кліканні.
+  --menuHoverColor: #876655; //при ховері
+  --menuActiveColor: #674d40; //при кліканні
+
+  --buttonFontColor: #ffffff;
+  --placeholderColor: rgba(171, 129, 108, 0.5);
+
+  // Fonts
+
+  --mainFontFamily: Montserrat;
+  --mainFontSize: 16px;
+  --titleFont: Caveat Brush;
+  --titleFontWeight: 400;
+  --btnFont: Caveat Brush;
+}
+
 h1,
 h2,
 h3,
@@ -26,10 +52,10 @@ img {
 
 body {
   margin: 0;
-  color: $primaryFontColor;
-  background-color: $bgColor;
+  color: var(--primaryFontColor);
+  background-color: var(--bgColor);
 
-  font-family: $mainFontFamily;
-  font-size: $mainFontSize;
+  font-family: var(--mainFontFamily);
+  font-size: var(--mainFontSize);
   line-height: 1.2;
 }
