@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  color: var(--FontColor);
+  background-color: var(--bgColor);
+
+  font-family: var(--mainFontFamily);
+  font-size: var(--mainFontSize);
+  line-height: 1.2;
+}
+
+h2 {
+  font: var(--titleFont);
+  font-weight: var(--titleFontWeight);
+  font-size: 24px;
+  line-height: 2.7;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.8;
+  }
+}
+
+.link {
+  color: var(--fontColor);
+  text-decoration: none;
+}
