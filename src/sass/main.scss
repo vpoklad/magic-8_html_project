@@ -5,13 +5,10 @@
 
 // Стили для файла с примером HTML-фрагмента
 
-
 @import './utils/variables';
-@import './utils/breakpoints';
 
 @import './base/common';
 @import './base/container';
-@import './base/logo';
 
 @import './layout/header';
 @import './layout/hero'; //1 screen
@@ -21,8 +18,10 @@
 @import './layout/footer';
 
 @import './components/mobile-menu';
+@import './components/logo';
 @import './components/social-icons';
 @import './components/button';
+@import './components/grid';
+@import './components/section-title';
 @import './components/registration-form';
 @import './components/contact-form';
-
