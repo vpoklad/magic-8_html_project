@@ -1,0 +1,41 @@
+.mobile-menu {
+    display: none;
+    @media screen and (max-width: 1199.9px) {
+        display: block;        
+    }
+}
+.navigation--mobile-menu {
+    text-align: center;
+    padding-top: 25px;
+}
+.logo-menu {
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+
+.navigation--link {
+text-decoration: none;  /* временно */
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+color: var(--fontColor);
+
+
+&:hover, &:focus {
+color: var(--hoverColor);
+};
+}
+
+
+.navigation--item {
+
+&:not(:last-child) {
+    margin-bottom: 45px;
+}
+
+
+}
