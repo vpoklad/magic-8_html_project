@@ -23,3 +23,12 @@
     margin-right: 0;
   }
 }
+.nav__menu-link {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--fontColor);
+  &:focus,
+  :hover {
+    color: var(--hoverColor);
+  }
+}
