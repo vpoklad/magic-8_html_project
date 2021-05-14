@@ -1,28 +1,18 @@
 <section id="registration" class="section registration">
   <div class="container">
-    <form action="telegram.php" method="POST" class="form" autocomplete="off">
+    <form action="telegram.php" method="POST" class="registation-form" autocomplete="off">
       <legend>Registration</legend>
-      <div class="date-location">
+      <div class="registation-form__date-location">
         May 23, 11:00 <br />
         New York
-      </div>
-      <div class="form__prise">
-        $ 699
-      </div>
-    
-      <label for="">
-        <div>Apply your personal info
+        <span class="registation-form__prise">$ 699</span>
+      </div>                          
+        <div class="registation-form__title">Apply your personal info
         for registration</div>
-        <input type="text" name="user_name" placeholder="Your name" pattern="^[A-Za-zА-Яа-яЁё]+$">
-      </label>
-     
-      <label for="">
-        <input type="tel" name="user_phone" placeholder="Phone number" pattern="^[ 0-9]+$">
-      </label>
-      <label for="">
-        <input type="email" name="user_phone" placeholder="Email" >
-      </label>
-      <button type="submit" class="button">Register</button>
+        <input type="text" class="registation-form__field" name="user_name" placeholder="Your name" pattern="^[A-Za-zА-Яа-яЁё]+$">
+        <input type="tel" class="registation-form__field" name="user_phone" placeholder="Phone number" pattern="^[ 0-9]+$">
+        <input type="email" class="registation-form__field" name="user_phone" placeholder="Email" >     
+      <button type="submit" class="button registation-form__button">Register</button>
       
     </form>
   </div>

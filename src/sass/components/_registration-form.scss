@@ -1,3 +1,62 @@
 label {
   display: block;
 }
+.registation-form {
+  text-align: center;
+  padding: 12px;
+  padding-top: 15px;
+  max-width: 290px;
+  height: 510px;
+
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+
+  &__title {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 17px;
+    max-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__field {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--accentColor);
+  }
+  &__field:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  &__field::placeholder {
+    line-height: 1.25;
+
+    color: var(--placeholderColor);
+  }
+  &__date-location {
+    margin-bottom: 11px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  &__date-location::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(171, 129, 108, 0.5);
+  }
+  &__prise {
+    display: block;
+    margin-top: 25px;
+  }
+  &__button {
+    margin-top: 17px;
+  }
+}
+legend {
+  margin-bottom: 11px;
+  font-family: Caveat Brush;
+  font-size: 24px;
+  line-height: 2.71;
+}
