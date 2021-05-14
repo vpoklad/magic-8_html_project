@@ -1,19 +1,44 @@
 <section class="container about-us">
+    <div class="about-us__flex"></div>
     <img class="about-us-img"
     srcset="./images/about_us/box_mobile.png 320w, ./images/about_us/box_mobile@2x.png 640w" 
     src="./images/about_us/box_mobile.png" 
     alt="Coffee and bow with donuts">
     <h2 class="section-title about-us__title">About us</h2>
-    <p class="">
+    <article class="about-us__box">
         Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the
         world!</br>
+        <br>
         Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes for
         weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for
-        excellence.
+        excellence<span id="dot">.</span>
+        <span id="more">
+        <br>
         We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will
-        enjoy our cooking atmosphere!
+        enjoy our cooking atmosphere!</span>
 
-    </p>
-    <button tybe='button' class="morebtn" >Read more</button>
+    </article>
+    <button tybe='button' class="morebtn" id="read" onclick="read()">Read more</button>
+    <script type="text/javascript">
+        var i=0;
+        function read(){
+            if(!i){
+                document.getElementById("more").style.display ="inline";
+                document.getElementById("dot").style.display = "none";
+                document.getElementById("read").innerHTML="Less";
+                i=1; 
+            }
+            else {
+                document.getElementById("more").style.display = "none";
+                document.getElementById("dot").style.display = "inline";
+                document.getElementById("read").innerHTML = "Read more";
+                i=0;
+            }
+
+        }
+    </script>
+
+
+
 
 </section>
