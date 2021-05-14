@@ -18,4 +18,23 @@
     background: var(--activeColor);
   }
   cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+
+.btn-main {
+  display: block;
+  margin: auto;
+  margin-bottom: 45px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 65px;
+  }
 }
