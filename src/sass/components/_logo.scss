@@ -1,0 +1,9 @@
+.logo {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 40px;
+    margin-left: 0;
+  }
+}

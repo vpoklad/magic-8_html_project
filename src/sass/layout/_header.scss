@@ -1,0 +1,25 @@
+.header__container {
+  padding-top: 7px;
+
+  @media screen and (max-width: 1279px) {
+    .nav__menu-list {
+      display: none;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu-list {
+  display: flex;
+}
+
+.nav__menu-list-item {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
