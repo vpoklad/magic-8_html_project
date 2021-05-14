@@ -1,0 +1,21 @@
+.button {
+  font-family: Caveat Brush;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  min-width: 145px;
+  border: none;
+  font-size: 18px;
+  line-height: 1.61;
+  text-align: center;
+  background-color: var(--accentColor);
+  color: var(--accentFontColor);
+  &:hover,
+  &:focus {
+    background-color: var(--hoverColor);
+  }
+  &:active {
+    background: var(--activeColor);
+  }
+  cursor: pointer;
+}
