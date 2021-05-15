@@ -3,30 +3,22 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
+:root {
+  --bgColor: #fffff9;
+  --fontColor: #2e2520;
+  --accentColor: #ab816c;
+  --hoverColor: #876655;
+  --activeColor: #674d40;
+  --accentFontColor: #ffffff;
+  --placeholderColor: rgba(171, 129, 108, 0.5);
+  --mainFontFamily: Montserrat;
+  --mainFontSize: 16px;
+  --titleFont: Caveat Brush;
+  --titleFontWeight: 400;
+  --btnFont: Caveat Brush;
+  --mobile: 320px;
+  --tablet: 768px;
+  --desktop: 1280px;
 }
 
 html {
@@ -59,10 +51,56 @@ img {
 
 body {
   margin: 0;
-  color: #2e2520;
-  background-color: #fffff9;
-  font-family: Montserrat;
-  font-size: 16px;
+  color: var(--FontColor);
+  background-color: var(--bgColor);
+  font-family: var(--mainFontFamily);
+  font-size: var(--mainFontSize);
   line-height: 1.2;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 664px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 852px;
+  }
+}
+
+.about-us {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-img {
+  width: 290px;
+}
+
+.about-us__title {
+  text-align: center;
+}
+
+.section-title {
+  font-family: var(--titleFont);
+  font-weight: var(--titleFontWeight);
+  font-size: 24px;
+  line-height: 2.7;
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title {
+    font-size: 36;
+    line-height: 1.8;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -30,6 +30,7 @@ body {
   background-color: var(--bgColor);
 
   font-family: var(--mainFontFamily);
+  font-weight: 400;
   font-size: var(--mainFontSize);
   line-height: 1.2;
 }
@@ -38,4 +39,8 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
