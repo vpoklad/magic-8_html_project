@@ -1,24 +1,46 @@
 <section class="container about-us" id="about-us">
-    <div class="about-us__flex"></div>
-    <img class="about-us-img"
-    srcset="./images/about_us/box_mobile.png 320w, ./images/about_us/box_mobile@2x.png 640w" 
-    src="./images/about_us/box_mobile.png" 
-    alt="Coffee and bow with donuts">
-    <h2 class="section-title about-us__title">About us</h2>
-    <article class="about-us__box">
-        Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the
-        world!</br>
-        <br>
-        Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes for
-        weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for
-        excellence<span id="dot">.</span>
-        <span id="more">
-        <br>
-        We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will
-        enjoy our cooking atmosphere!</span>
+    <div class="about-us__flex">
+        <div class="empty_box about-us__item">
+            <img class="about-us-img " srcset="
+                        ./images/about_us/box_mobile.png 290w,
+                        ./images/about_us/box_tablet.png 330w,
+                        ./images/about_us/box_desktop.png 512w,
+                        ./images/about_us/box_mobile@2x.png 580w,
+                        ./images/about_us/box_tablet@2x.png 660w,
+                        ./images/about_us/box_desktop@2x.png 1024w  
+                        " src="./images/about_us/box_mobile.png"
+                sizes="(min-width: 1280px) 512px, (min-width: 768px) 330px, 290px"
+                alt="Coffee and bow with donuts">
+        </div>
+        
+        <div class="about-us__item">
+            <h2 class="section-title about-us__title">About us</h2>
+            <article class="about-us__box">
+            Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save
+            the
+            world!</br>
+            <br>
+            Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes for
+            weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for
+            excellence<span id="dot">.</span>
+            <span id="more">
+                <br>
+                We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you
+                will
+                enjoy our cooking atmosphere!
+            </span>
+            <span class="desktop-full">
+                <br><br> We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will enjoy our cooking atmosphere!
+            </span>
 
-    </article>
-    <button tybe='button' class="morebtn" id="read" onclick="read()">Read more</button>
+            </article>
+            <button tybe='button' class="morebtn" id="read" onclick="read()">Read more</button>
+        </div>
+    </div>
+
+    
+    
+
     <script type="text/javascript">
         var i=0;
         function read(){
@@ -34,11 +56,6 @@
                 document.getElementById("read").innerHTML = "Read more";
                 i=0;
             }
-
         }
     </script>
-
-
-
-
 </section>
