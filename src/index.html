@@ -20,6 +20,9 @@
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
+
+    <include src="./partials/mobile-menu.html"></include>    
+
     <include src="./partials/hero.html"></include>
     <include src="./partials/about-us.html"></include>
     <include src="./partials/program.html"></include>
@@ -27,10 +30,10 @@
     <include src="./partials/registration.html"></include>
     <include src="./partials/contact.html"></include>
 
-    <!-- <include src="./partials/example.html"></include> -->
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+
     <script type="text/javascript">
       var i = 0;
       function readProgram() {
@@ -45,5 +48,8 @@
         }
       }
     </script>
+
+    <script src="./js/menu-mobile.js"></script>
+
   </body>
 </html>
