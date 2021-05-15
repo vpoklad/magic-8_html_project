@@ -35,7 +35,7 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: -10;
+    top: -10px;
     left: -30px;
   }
   @media screen and (min-width: 1280px) {
@@ -76,12 +76,12 @@
   }
 }
 .about-us__content {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   line-height: 1.4;
   @media screen and (min-width: 1280px) {
     font-size: 18px;
     line-height: 1.57;
-    padding-bottom: 21px;
+    margin-bottom: 21px;
   }
 }
 .desktop-full {
