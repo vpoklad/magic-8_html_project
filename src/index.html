@@ -31,5 +31,19 @@
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script type="text/javascript">
+      var i = 0;
+      function readProgram() {
+        if (!i) {
+          document.getElementById('moreProgram').style.display = 'block';
+          document.getElementById('readProgram').innerHTML = 'Less';
+          i = 1;
+        } else {
+          document.getElementById('moreProgram').style.display = 'none';
+          document.getElementById('readProgram').innerHTML = 'Read more';
+          i = 0;
+        }
+      }
+    </script>
   </body>
 </html>

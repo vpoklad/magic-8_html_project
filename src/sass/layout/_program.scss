@@ -22,7 +22,7 @@
     text-align: left;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 36px;
     line-height: 1.81;
     margin-bottom: 10px;
@@ -32,7 +32,7 @@
 .section-program__text {
   margin-bottom: 10px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 18px;
     margin-bottom: 21px;
   }
@@ -58,7 +58,7 @@
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 18px;
     &:not(:last-child) {
       margin-bottom: 15px;
@@ -66,11 +66,18 @@
   }
 }
 
+#moreProgram {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
 .section-program__more {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     margin-top: 10px;
   }
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 1280px) {
     font-size: 18px;
     margin-top: 21px;
   }
@@ -83,7 +90,7 @@
     margin-right: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 40px;
   }
 }
@@ -106,11 +113,11 @@
     margin-left: -6px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: -15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: -32px;
   }
 }
@@ -123,12 +130,12 @@
     // flex-basis: calc((100% - 2 * 6px) / 2);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     // flex-basis: calc((100% - 2 * 15px) / 2);
     margin-left: 15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     // flex-basis: calc((100% - 2 * 32px) / 2);
     width: 180px;
     height: 180px;
@@ -158,7 +165,7 @@
   padding-top: 50px;
   margin-bottom: 13px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 24px;
     line-height: 1.25;
     padding-top: 63px;
@@ -172,7 +179,7 @@
   color: #000;
   margin-bottom: 13px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     margin-bottom: 16px;
   }
@@ -184,7 +191,29 @@
   margin-right: auto;
   margin-bottom: 8px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 11px;
+  }
+}
+
+.morebtn {
+  display: block;
+  border: none;
+  background-color: transparent;
+
+  font-family: var(--titleFont);
+  font-size: 18px;
+  line-height: 3.6;
+  color: var(--accentColor);
+  &:hover,
+  &:focus {
+    color: var(--hoverColor);
+  }
+  &:active {
+    color: var(--activeColor);
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
