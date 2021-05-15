@@ -1,4 +1,4 @@
-.section-program__conteiner {
+.section-program__container {
   @media screen and (max-width: 767px) {
     max-width: 320px;
     margin-left: auto;
@@ -43,11 +43,12 @@
   align-items: center;
 
   &::before {
+    flex-shrink: 0;
     display: block;
     content: '';
     width: 30px;
     height: 30px;
-    background-image: url(../images/chef-hat.svg);
+    background-image: url(../images/coffee-cup-bullet.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 10px;
