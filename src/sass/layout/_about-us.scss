@@ -5,6 +5,7 @@
 
 .about-us__flex {
   display: block;
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     position: relative;
 
@@ -34,12 +35,12 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 0;
+    top: -10;
     left: -30px;
   }
   @media screen and (min-width: 1280px) {
     position: absolute;
-    top: 0;
+    top: -30px;
     left: -100px;
   }
 
@@ -50,19 +51,13 @@
   text-align: center;
 }
 
-.about-us__box {
-  @media screen and (min-width: 1280px) {
-    font-size: 18px;
-    line-height: 1.55;
-  }
-}
-
 #more {
   display: none;
 }
 .morebtn {
   border: none;
   background-color: transparent;
+  padding-top: 0;
 
   font-family: var(--titleFont);
   font-size: 18px;
@@ -80,7 +75,15 @@
     display: none;
   }
 }
-
+.about-us__content {
+  padding-bottom: 15px;
+  line-height: 1.4;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.57;
+    padding-bottom: 21px;
+  }
+}
 .desktop-full {
   display: none;
 
