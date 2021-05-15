@@ -1,7 +1,7 @@
 .header__container {
   padding-top: 7px;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   @media screen and (max-width: 1279px) {
     .nav__menu-list {
@@ -14,9 +14,6 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 31px;
-    .hamburger {
-      display: none;
-    }
   }
 }
 
