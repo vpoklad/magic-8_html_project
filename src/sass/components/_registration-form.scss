@@ -8,7 +8,7 @@ label {
   max-width: 290px;
   height: 510px;
 
-  background: #fffff9;
+  background: var(--bgColor);
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
 
@@ -22,7 +22,13 @@ label {
   }
   &__field {
     width: 100%;
+    padding-bottom: 2px;
     border: none;
+    font-family: Montserrat;
+    line-height: 1.2;
+    background-color: transparent;
+    color: var(--activeColor);
+    outline-color: var(--placeholderColor);
     border-bottom: 1px solid var(--accentColor);
   }
   &__field:not(:last-child) {
@@ -30,17 +36,20 @@ label {
   }
   &__field::placeholder {
     line-height: 1.25;
-
     color: var(--placeholderColor);
   }
+  &__field:invalid:not(:focus) {
+    background-color: rgba(253, 25, 25, 0.5);
+  }
   &__date-location {
-    margin-bottom: 11px;
+    margin-bottom: 6px;
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.22;
+    line-height: 1.25;
   }
   &__date-location::after {
     content: '';
+    margin-top: 20px;
     display: inline-block;
     width: 100%;
     height: 1px;
@@ -51,7 +60,13 @@ label {
     margin-top: 25px;
   }
   &__button {
-    margin-top: 17px;
+    margin-top: 9px;
+  }
+  &__field:-webkit-autofill,
+  &__field:-webkit-autofill:hover,
+  &__field:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--activeColor);
+    -webkit-box-shadow: 0 0 0px 1000px var(--bgColor) inset;
   }
 }
 legend {
