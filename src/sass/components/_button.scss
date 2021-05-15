@@ -18,4 +18,28 @@
     background: var(--activeColor);
   }
   cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+
+.hero__button {
+  display: block;
+  width: 145px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 45px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 45px;
+    margin-bottom: 65px;
+    line-height: 1.4;
+  }
 }
