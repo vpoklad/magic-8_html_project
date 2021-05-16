@@ -4,8 +4,7 @@
  * Все паршалы подключаются сюда.
  */
 :root {
-  --bgBodyColor: #e5e5e5;
-  --bgColor: #fffff9;
+  --bgBodyColor: #ffffff;
   --fontColor: #2e2520;
   --accentColor: #ab816c;
   --hoverColor: #876655;
