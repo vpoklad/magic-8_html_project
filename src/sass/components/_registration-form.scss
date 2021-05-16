@@ -4,7 +4,7 @@
     margin-right: auto;
     margin-left: auto;
     padding: 12px;
-    padding-top: 25px;
+    padding-top: 15px;
     max-width: 290px;
     height: 510px;
     border-radius: 150px 150px 0px 0px;
@@ -13,7 +13,7 @@
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   }
   &__section-title {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   &__date-location {
     margin-bottom: 6px;
@@ -34,12 +34,18 @@
     display: block;
     margin-top: 25px;
   }
+  &__container {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.registation-form {
+.registration-form {
   &__title {
     font-size: 16px;
     line-height: 1.25;
-    margin-bottom: 17px;
+    // margin-bottom: 17px;
     max-width: 200px;
     margin-right: auto;
     margin-left: auto;
@@ -51,7 +57,7 @@
     font-family: Montserrat;
     line-height: 1.2;
     background-color: transparent;
-    color: var(--activeColor);
+    color: var(--fontColor);
     outline-color: var(--placeholderColor);
     border-bottom: 1px solid var(--accentColor);
   }
@@ -81,16 +87,17 @@
   .registration {
     &__wrap {
       display: flex;
-      padding-top: 54px;
-      padding-bottom: 35px;
+      justify-content: space-between;
+      padding: 35px 25px;
       max-width: 634px;
       height: 260px;
       border-radius: 150px;
     }
     &__information {
+      position: relative;
       display: flex;
       flex-wrap: wrap;
-      width: calc(33%);
+      width: calc(33% - 32px);
     }
     &__section-title {
       position: absolute;
@@ -98,11 +105,25 @@
       left: 50%;
       transform: translateX(-50%);
     }
+    &__date-location {
+      padding-top: 20px;
+      text-align: right;
+      margin-right: 30px;
+    }
     &__date-location::after {
+      position: absolute;
       content: '';
+      top: -15px;
+      right: 0;
       height: 100%;
       width: 1px;
       margin-left: 30px;
+    }
+    &__container {
+      padding-top: 65px;
+      padding-bottom: 65px;
+      position: relative;
+      height: 390px;
     }
   }
   .registration-form {
@@ -119,14 +140,14 @@
       margin-bottom: 15px;
     }
     &__title {
-      width: 100%;
       text-align: left;
+      margin-bottom: 17px;
+      margin-left: 12px;
+    }
+    &__button {
+      margin: 0;
     }
   }
-  .registation-container {
-    padding-top: 65px;
-    padding-bottom: 65px;
-    position: relative;
-    height: 390px;
-  }
+}
+@media screen and (min-width: 1280px) {
 }
