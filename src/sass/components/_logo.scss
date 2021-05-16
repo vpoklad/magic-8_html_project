@@ -1,6 +1,7 @@
 .logo {
   margin-right: auto;
   margin-left: auto;
+  width: 96px;
 
   @media screen and (min-width: 768px) {
     margin-left: 20px;
@@ -9,5 +10,6 @@
   @media screen and (min-width: 1280px) {
     margin-left: 0;
     margin-right: 40px;
+    width: 158px;
   }
 }
