@@ -1,0 +1,68 @@
+.button {
+  font-family: Caveat Brush;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 25px;
+  min-width: 145px;
+  border: none;
+  font-size: 18px;
+  line-height: 1.61;
+  text-align: center;
+  background-color: var(--accentColor);
+  color: var(--accentFontColor);
+  &:hover,
+  &:focus {
+    background-color: var(--hoverColor);
+  }
+  &:active {
+    background: var(--activeColor);
+  }
+  cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+
+.hero__button {
+  display: block;
+  width: 145px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 45px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 45px;
+    margin-bottom: 65px;
+    line-height: 1.4;
+  }
+}
+
+.more__btn {
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-family: var(--titleFont);
+  font-size: 18px;
+  line-height: 3.6;
+  color: var(--accentColor);
+  &:hover,
+  &:focus {
+    color: var(--hoverColor);
+  }
+  &:active {
+    color: var(--activeColor);
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}

@@ -1,0 +1,51 @@
+<header class="header">
+  <section class="section">
+    <div class="container header__container">
+      <style>
+        html {
+          scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+        }
+      </style>
+      <nav class="nav">
+        <div class="logo">
+          <a href="./index.html"
+            ><picture>
+              <source
+                srcset="/images/logo/logo_desktop.png 1x, /images/logo/logo_desktop@2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/images/logo/logo_mobile.png 1x, /images/logo/logo_mobile@2x.png 2x"
+                media="(max-width: 1279px)"
+              />
+              <img src="/images/logo/logo_desktop.png" width="158px" alt="Лого" /> </picture
+          ></a>
+        </div>
+        <ul class="list nav__menu-list">
+          <li class="nav__menu-list-item">
+            <a href="#about-us" class="link nav__menu-link">About us</a>
+          </li>
+          <li class="nav__menu-list-item">
+            <a href="#program" class="link nav__menu-link">Program</a>
+          </li>
+          <li class="nav__menu-list-item">
+            <a href="#reviews" class="link nav__menu-link">Reviews</a>
+          </li>
+          <li class="nav__menu-list-item">
+            <a href="#contact" class="link nav__menu-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="hamburger hamburger--stand"
+        type="button"
+        aria-label="menu-button"
+        data-menu-button
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </section>
+</header>
