@@ -16,9 +16,6 @@
 }
 
 .section-program__title {
-  font-family: var(--titleFont);
-  font-size: 24px;
-  line-height: 2.708;
   text-align: center;
   color: var(--fontColor);
 
@@ -27,8 +24,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 36px;
-    line-height: 1.81;
     margin-bottom: 10px;
   }
 }
@@ -198,28 +193,6 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 11px;
-  }
-}
-
-.morebtn {
-  display: block;
-  border: none;
-  background-color: transparent;
-
-  font-family: var(--titleFont);
-  font-size: 18px;
-  line-height: 3.6;
-  color: var(--accentColor);
-  &:hover,
-  &:focus {
-    color: var(--hoverColor);
-  }
-  &:active {
-    color: var(--activeColor);
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: none;
   }
 }
 

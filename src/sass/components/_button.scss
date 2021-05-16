@@ -43,3 +43,26 @@
     line-height: 1.4;
   }
 }
+
+.more__btn {
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-family: var(--titleFont);
+  font-size: 18px;
+  line-height: 3.6;
+  color: var(--accentColor);
+  &:hover,
+  &:focus {
+    color: var(--hoverColor);
+  }
+  &:active {
+    color: var(--activeColor);
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
