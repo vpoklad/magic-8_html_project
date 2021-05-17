@@ -1,7 +1,15 @@
 .section--about-us {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: -15px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 60px;
+  }
 
   // outline: 2px solid teal; //for testing
 }
@@ -15,6 +23,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -33,7 +44,7 @@
   @media screen and (min-width: $tablet) {
     position: absolute;
     top: -10px;
-    left: -30px;
+    left: -15px;
   }
   @media screen and (min-width: $desktop) {
     position: absolute;
@@ -79,12 +90,11 @@
   }
 }
 .about-us__content {
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 15px;
+  @media screen and (min-width: $mobile) {
     line-height: 1.4;
 
     &.last {
-      margin-bottom: 0;
+      margin-top: 15px;
     }
 
     &.hidden {
@@ -92,17 +102,19 @@
     }
   }
   @media screen and (min-width: $tablet) {
-    &.last {
-      margin-top: 15px;
-    }
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 1.57;
-    // margin-bottom: 15px;
+
     &.last {
-      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    &.hidden {
+      display: inline;
     }
   }
 }

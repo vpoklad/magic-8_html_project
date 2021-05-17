@@ -321,7 +321,19 @@ body {
 .section--about-us {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .section--about-us {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section--about-us {
+    margin-top: 60px;
+  }
 }
 
 .about-us__flex {
@@ -340,6 +352,8 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -360,7 +374,7 @@ body {
   .about-us-img {
     position: absolute;
     top: -10px;
-    left: -30px;
+    left: -15px;
   }
 }
 
@@ -414,13 +428,12 @@ body {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 320px) {
   .about-us__content {
-    margin-bottom: 15px;
     line-height: 1.4;
   }
   .about-us__content.last {
-    margin-bottom: 0;
+    margin-top: 15px;
   }
   .about-us__content.hidden {
     display: none;
@@ -428,8 +441,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .about-us__content.last {
-    margin-top: 15px;
+  .about-us__content {
+    margin-bottom: 0;
   }
 }
 
@@ -439,7 +452,10 @@ body {
     line-height: 1.57;
   }
   .about-us__content.last {
-    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .about-us__content.hidden {
+    display: inline;
   }
 }
 
@@ -971,7 +987,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 }
 
@@ -1484,7 +1500,7 @@ body {
 @media screen and (min-width: 768px) {
   .hamburger {
     top: 11px;
-    right: 15px;
+    right: 52px;
   }
 }
 
