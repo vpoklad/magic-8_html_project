@@ -9,7 +9,7 @@
     height: 510px;
     border-radius: 150px 150px 0px 0px;
 
-    background: var(--bgColor);
+    background-color: var(--bgColor);
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   }
   &__section-title {
@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
   .registration {
     &__wrap {
       // position: relative;
@@ -189,7 +189,7 @@
     }
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .registration {
     &__wrap {
       display: flex;
