@@ -1,6 +1,5 @@
 .header {
   position: absolute;
-  z-index: 5;
   height: 50px;
   width: 100%;
 }
@@ -9,10 +8,12 @@
   position: relative;
   padding-top: 7px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   // display: flex;
   // align-items: center;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1023px) {
     .nav__menu-list {
       display: none;
     }
@@ -22,7 +23,7 @@
     padding-top: 27px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1023px) {
     padding-top: 31px;
   }
 }
