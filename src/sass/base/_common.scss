@@ -27,7 +27,7 @@ img {
 body {
   margin: 0;
   color: var(--FontColor);
-  background-color: var(--bgBodyColor);
+  background-color: var(--accentFontColor);
 
   font-family: var(--mainFontFamily);
   font-weight: 400;
@@ -35,6 +35,57 @@ body {
   line-height: 1.22;
 }
 
+.wraper {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  min-width: 320px;
+
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+    background-image: url(../../src/images/bg/bg_hero_mobile.png),
+      url(../../src/images/bg/bg_rewiews_mobile.png);
+    background-repeat: no-repeat;
+    background-position: top center, bottom 216px center;
+    background-size: 100%, 100%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../../src/images/bg/bg_hero_mobile@2x.png),
+        url(../../src/images/bg/bg_rewiews_mobile@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 768px;
+    background-image: url(../../src/images/bg/bg_hero_tablet.png),
+      url(../../src/images/bg/bg_rewiews_tablet.png);
+    background-repeat: no-repeat;
+    background-position: top center, bottom 63px center;
+    background-size: 100%, 100%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../../src/images/bg/bg_hero_tablet@2x.png),
+        url(../../src/images/bg/bg_rewiews_tablet@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 1280px;
+    background-image: url(../../src/images/bg/bg_hero_desktop.png),
+      url(../../src/images/bg/bg_rewiews_desktop.png);
+    background-repeat: no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100%, 100%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../../src/images/bg/bg_hero_desktop@2x.png),
+        url(../../src/images/bg/bg_rewiews_desktop@2x.png);
+    }
+  }
+}
 .list {
   list-style: none;
   padding: 0;
