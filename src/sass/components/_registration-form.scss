@@ -9,7 +9,7 @@
     height: 510px;
     border-radius: 150px 150px 0px 0px;
 
-    background-color: var(--bgColor);
+    background-color: #fffff9;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   }
   &__section-title {
@@ -202,6 +202,17 @@
     }
     &__section-title {
       position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__information {
+      font-size: 18px;
+      line-height: 1.22px;
+    }
+    &__container {
+      position: relative;
+      padding-top: 109px;
     }
   }
 }
