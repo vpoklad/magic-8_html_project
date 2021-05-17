@@ -1,14 +1,14 @@
-.footer__section {
+.section-footer {
   position: relative;
 }
 .footer__container {
   padding-top: 82px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 50px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 47px;
   }
 }
@@ -23,7 +23,7 @@
   justify-content: space-between;
   padding-bottom: 19px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 21px;
   }
 }
@@ -46,11 +46,11 @@
   bottom: 0px;
   z-index: -1;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 207px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 362px;
   }
 }
