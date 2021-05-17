@@ -59,20 +59,39 @@
   }
 }
 
-#moreProgram {
-  @media screen and (max-width: 1023px) {
-    display: none;
-  }
-}
+// #moreProgram {
+//   @media screen and (max-width: 1023px) {
+//     display: none;
+//   }
+// }
+
+// .section-program__more {
+//   @media screen and (max-width: 1023px) {
+//     margin-top: 10px;
+//   }
+
+//   @media screen and (min-width: 1024px) {
+//     font-size: 18px;
+//     margin-top: 21px;
+//   }
+// }
 
 .section-program__more {
   @media screen and (max-width: 1023px) {
     margin-top: 10px;
+
+    &.hidden {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 1024px) {
     font-size: 18px;
     margin-top: 21px;
+
+    &.hidden {
+      display: block;
+    }
   }
 }
 

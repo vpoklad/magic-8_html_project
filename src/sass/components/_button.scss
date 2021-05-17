@@ -49,11 +49,12 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-
+  padding: 0;
   font-family: var(--titleFont);
   font-size: 18px;
   line-height: 3.6;
   color: var(--accentColor);
+
   &:hover,
   &:focus {
     color: var(--hoverColor);
