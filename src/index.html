@@ -14,8 +14,14 @@
     <!-- ToDo - поменять картинку -->
     <meta
       property="og:image"
-      content="https://vpoklad.github.io/magic-8_html_project/demo.090c7c6d.jpg"
+      content="https://vpoklad.github.io/magic-8_html_project/site-screen.jpg"
     />
+    <meta
+      property="og:image:secure_url"
+      content="https://vpoklad.github.io/magic-8_html_project/site-screen.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
     <meta property="og:site_name" content="Donut Masterclass with the Donut King" />
     <meta property="og:locale" content="en_EN" />
 
@@ -44,40 +50,27 @@
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <div class="wraper">
-      <include src="./partials/header.html"></include>
-
-      <include src="./partials/mobile-menu.html"></include>
-
+<div class="wraper">
+    <include src="./partials/header.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
+    <main>       
       <include src="./partials/hero.html"></include>
       <include src="./partials/about-us.html"></include>
-
       <include src="./partials/program.html"></include>
       <include src="./partials/reviews.html"></include>
       <include src="./partials/registration.html"></include>
       <include src="./partials/contact.html"></include>
-
+      <include src="./partials/program.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/registration.html"></include>
+      <include src="./partials/contact.html"></include>
+  </main>
       <include src="./partials/footer.html"></include>
     </div>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-
     <script src="./js/menu-mobile.js"></script>
-
-    <script type="text/javascript">
-      var i = 0;
-      function readProgram() {
-        if (!i) {
-          document.getElementById('moreProgram').style.display = 'block';
-          document.getElementById('readProgram').innerHTML = 'Less';
-          i = 1;
-        } else {
-          document.getElementById('moreProgram').style.display = 'none';
-          document.getElementById('readProgram').innerHTML = 'Read more';
-          i = 0;
-        }
-      }
-    </script>
+    <script src="./js/more.js"></script>
   </body>
 </html>
