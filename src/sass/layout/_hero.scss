@@ -4,16 +4,16 @@
   //padding-bottom: 28px;
 }
 .hero__container {
-  padding-top: 83px;
+  //padding-top: 83px;
   text-align: center;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 80px;
+    //padding-top: 80px;
     text-align: left;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 159px;
+    //padding-top: 159px;
   }
 }
 
@@ -56,7 +56,7 @@
   left: 0;
   top: 168px;
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 11279px) {
     display: none;
   }
 }
