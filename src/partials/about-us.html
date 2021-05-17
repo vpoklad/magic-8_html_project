@@ -9,7 +9,7 @@
                         ./images/about_us/box_tablet@2x.png 660w,
                         ./images/about_us/box_desktop@2x.png 1024w  
                         " src="./images/about_us/box_mobile.png"
-                sizes="(min-width: 1280px) 512px, (min-width: 768px) 330px, 290px"
+                sizes="(min-width: 1024px) 512px, (min-width: 768px) 330px, 290px"
                 alt="Coffee and bow with donuts">
         </div>
         
@@ -21,8 +21,8 @@
                 world!
             </p>
             <p class="about-us__content"> 
-                hundreds of cakes for
-                weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for excellence<span id="dot">.</span>
+                Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes for weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for
+                excellence.
             </p>
             <p id="more" class="about-us__content">
                 We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will enjoy our cooking atmosphere!
@@ -30,8 +30,9 @@
             <p class="desktop-full about-us__content">
                 We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will enjoy our cooking atmosphere!
             </p>
-            
-            <button type='button' class="morebtn" id="read" onclick="read()">Read more</button>
+            <p>
+                <button type='button' class="morebtn" id="read" onclick="read()">Read more</button>
+            </p>
         </div>
     </div>
 
@@ -43,13 +44,11 @@
         function read(){
             if(!i){
                 document.getElementById("more").style.display ="inline";
-                document.getElementById("dot").style.display = "none";
                 document.getElementById("read").innerHTML="Less";
                 i=1; 
             }
             else {
                 document.getElementById("more").style.display = "none";
-                document.getElementById("dot").style.display = "inline";
                 document.getElementById("read").innerHTML = "Read more";
                 i=0;
             }
