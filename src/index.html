@@ -14,8 +14,14 @@
     <!-- ToDo - поменять картинку -->
     <meta
       property="og:image"
-      content="https://vpoklad.github.io/magic-8_html_project/demo.090c7c6d.jpg"
+      content="https://vpoklad.github.io/magic-8_html_project/site-screen.jpg"
     />
+    <meta
+      property="og:image:secure_url"
+      content="https://vpoklad.github.io/magic-8_html_project/site-screen.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
     <meta property="og:site_name" content="Donut Masterclass with the Donut King" />
     <meta property="og:locale" content="en_EN" />
 
@@ -45,15 +51,16 @@
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
-
     <include src="./partials/mobile-menu.html"></include>
 
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/about-us.html"></include>
-    <include src="./partials/program.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/registration.html"></include>
-    <include src="./partials/contact.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/about-us.html"></include>
+      <include src="./partials/program.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/registration.html"></include>
+      <include src="./partials/contact.html"></include>
+    </main>
 
     <include src="./partials/footer.html"></include>
 
