@@ -30,7 +30,7 @@ body {
   color: var(--FontColor);
   background-color: var(--accentFontColor);
 
-  font-family: var(--mainFontFamily);
+  font-family: var(--mainFontFamily), sans-serif;
   font-weight: 400;
   font-size: var(--mainFontSize);
   line-height: 1.22;
