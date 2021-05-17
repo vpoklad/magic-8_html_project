@@ -1,4 +1,4 @@
-let btn = document.getElementsByClassName('more__btn');
+let btn = document.getElementsByClassName('more-about__btn');
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', function () {
         let content = this.previousElementSibling;
@@ -11,5 +11,3 @@ for (let i = 0; i < btn.length; i++) {
         }
     });
 }
-
-
