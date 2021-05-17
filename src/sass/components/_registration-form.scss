@@ -45,7 +45,7 @@
   &__title {
     font-size: 16px;
     line-height: 1.25;
-    // margin-bottom: 17px;
+    margin-bottom: 17px;
     max-width: 200px;
     margin-right: auto;
     margin-left: auto;
@@ -86,12 +86,40 @@
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .registration {
     &__wrap {
+      // position: relative;
       display: flex;
       justify-content: space-between;
       padding: 35px 25px;
       max-width: 634px;
       height: 260px;
       border-radius: 150px;
+      z-index: 10;
+    }
+    &__wrap::before {
+      position: absolute;
+      content: '';
+      left: -43px;
+      top: 15px;
+      z-index: -1;
+      display: block;
+      width: 250px;
+      height: 250px;
+      background-image: url(/images/registration/donut5_tablet.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &__wrap::after {
+      position: absolute;
+      content: '';
+      right: -37px;
+      bottom: -71px;
+      z-index: -1;
+      display: block;
+      width: 280px;
+      height: 370px;
+      background-image: url(/images/registration/confetti.tablet.png);
+      background-position: center;
+      background-repeat: no-repeat;
     }
     &__information {
       position: relative;
@@ -101,7 +129,7 @@
     }
     &__section-title {
       position: absolute;
-      top: 0;
+      top: -12px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -126,13 +154,25 @@
       height: 390px;
     }
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .registration__wrap::before {
+      background-image: url('/images/registration/donut5_tablet@2x.png');
+      background-size: contain;
+    }
+    .registration__wrap::after {
+      background-image: url('/images/registration/confetti.tablet@2x.png');
+      background-size: contain;
+    }
+  }
   .registration-form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    z-index: 2;
     &__wrap {
       max-width: 250px;
     }
+
     &__field {
       max-width: 234px;
     }
@@ -150,4 +190,18 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .registration {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      padding: 35px 25px;
+      max-width: 822px;
+      height: 260px;
+      border-radius: 150px;
+      z-index: 10;
+    }
+    &__section-title {
+      position: absolute;
+    }
+  }
 }
