@@ -1,9 +1,17 @@
 .contacts-form__input {
-  width: 100%;
   border: none;
   border-bottom: 1px solid var(--accentColor);
   display: block;
   background-color: transparent;
+
+  width: 265px;
+
+  @media screen and (min-width: 767px) {
+    width: 410px;
+  }
+  @media screen and (min-width: 1269px) {
+    width: 430px;
+  }
 
   &::placeholder {
     color: var(--accentColor);
@@ -28,9 +36,6 @@
   background-color: transparent;
 }
 
-.contacts__title {
-  text-align: center;
-}
 .contacts__text {
   font-family: Montserrat;
   font-style: normal;
