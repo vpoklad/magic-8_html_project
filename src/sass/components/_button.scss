@@ -20,7 +20,7 @@
   }
   cursor: pointer;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 24px;
   }
 }
@@ -32,12 +32,12 @@
   margin: auto;
   margin-bottom: 45px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 31px;
     margin-left: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 158px;
     height: 45px;
     margin-bottom: 65px;
@@ -63,7 +63,7 @@
     color: var(--activeColor);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
