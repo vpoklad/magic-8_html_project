@@ -1,19 +1,12 @@
 .section-hero {
   position: relative;
-  //padding-top: 28px;
-  //padding-bottom: 28px;
 }
+
 .hero__container {
-  //padding-top: 83px;
   text-align: center;
 
   @media screen and (min-width: $tablet) {
-    //padding-top: 80px;
     text-align: left;
-  }
-
-  @media screen and (min-width: $desktop) {
-    //padding-top: 159px;
   }
 }
 
