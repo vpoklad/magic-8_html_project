@@ -1,0 +1,74 @@
+.section {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.section-hero {
+  padding-top: 83px;
+  padding-bottom: 0px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 159px;
+    padding-bottom: 26px;
+  }
+}
+
+.section-about-us {
+  padding-top: 0px;
+  padding-bottom: 42px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 76px;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 30px;
+    padding-bottom: 13px;
+  }
+}
+.section-reviews {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+}
+.section-registration {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.section-contact {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 67px;
+    padding-bottom: 67px;
+  }
+}
+.section-footer {
+  padding-top: 40px;
+  padding-bottom: 19px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 15px;
+    padding-bottom: 21px;
+  }
+}

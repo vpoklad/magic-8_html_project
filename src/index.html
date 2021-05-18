@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Donut Masterclass with the Donut King" />
     <meta
       property="og:description"
-      content="Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the world! We are going to teach you how to cook with passion and sparkles in your eyes!"
+      content="Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the world!"
     />
     <meta property="og:url" content="https://vpoklad.github.io/magic-8_html_project/" />
-    <!-- ToDo - поменять картинку -->
-    <meta
-      property="og:image"
-      content="https://vpoklad.github.io/magic-8_html_project/site-screen.jpg"
-    />
-    <meta
-      property="og:image:secure_url"
-      content="https://vpoklad.github.io/magic-8_html_project/site-screen.jpg"
-    />
+    <meta property="og:image" content="images/site-screen.jpg" />
+    <meta property="og:image:secure_url" content="images/site-screen.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
-    <meta property="og:site_name" content="Donut Masterclass with the Donut King" />
     <meta property="og:locale" content="en_EN" />
 
     <title>Donut Masterclass with the Donut King</title>
@@ -50,21 +43,19 @@
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-<div class="wraper">
+
     <include src="./partials/header.html"></include>
     <include src="./partials/mobile-menu.html"></include>
-    <main>       
+    <main>
       <include src="./partials/hero.html"></include>
       <include src="./partials/about-us.html"></include>
       <include src="./partials/program.html"></include>
       <include src="./partials/reviews.html"></include>
-      <include src="./partials/registration.html"></include>   
-     
-      <include src="./partials/contact.html"></include>
-  </main>
-      <include src="./partials/footer.html"></include>
-    </div>
+      <include src="./partials/registration.html"></include>
 
+      <include src="./partials/contact.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
