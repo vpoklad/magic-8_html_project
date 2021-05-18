@@ -6,10 +6,17 @@
 
   width: 265px;
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 768px) {
     width: 410px;
   }
   @media screen and (min-width: 1280px) {
+=======
+  @media screen and (min-width: $tablet) {
+    width: 410px;
+  }
+  @media screen and (min-width: $desktop) {
+>>>>>>> Stashed changes
     width: 430px;
   }
 
