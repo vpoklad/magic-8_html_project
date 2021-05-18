@@ -21,7 +21,7 @@
     fill: var(--hoverColor);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 24px;
     height: 19px;
   }
