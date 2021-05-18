@@ -8,7 +8,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 0;
+    margin-left: 0; //зайве перебиття властивостей з з ширини таблета
     margin-right: 40px;
     width: 158px;
   }

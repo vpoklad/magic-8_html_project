@@ -1,17 +1,17 @@
 .header {
   z-index: 1;
   position: absolute;
-  height: 50px;
+  height: 50px; //для чого?
   width: 100%;
 }
 
 .header__container {
   padding-top: 7px;
 
-  margin-left: auto;
-  margin-right: auto;
-  // display: flex;
-  // align-items: center;
+  margin-left: auto; //зайве перебиття властивостей з основного контейнера
+  margin-right: auto; //зайве перебиття властивостей з основного контейнера
+  // display: flex;//зайві коментарі
+  // align-items: center;//зайві коментарі
 
   @media screen and (max-width: 1279px) {
     .nav__menu-list {
