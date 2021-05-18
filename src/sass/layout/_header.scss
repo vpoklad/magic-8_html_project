@@ -1,17 +1,12 @@
 .header {
   z-index: 1;
   position: absolute;
-  height: 50px;
+
   width: 100%;
 }
 
 .header__container {
   padding-top: 7px;
-
-  margin-left: auto;
-  margin-right: auto;
-  // display: flex;
-  // align-items: center;
 
   @media screen and (max-width: 1279px) {
     .nav__menu-list {
@@ -33,22 +28,22 @@
   align-items: center;
 }
 
-.nav__menu-list {
+.nav__list {
   display: flex;
 }
 
-.nav__menu-list-item {
+.nav__item {
   margin-right: 20px;
   &:last-child {
     margin-right: 0;
   }
 }
-.nav__menu-link {
+.nav__link {
   font-size: 18px;
   line-height: 1.22;
   color: var(--fontColor);
   &:focus,
-  :hover {
+  &:hover {
     color: var(--hoverColor);
   }
 }
