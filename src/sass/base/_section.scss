@@ -15,13 +15,14 @@
     padding-bottom: 26px;
   }
 }
-.section--about-us,
+
 .section-about-us {
   padding-top: 0px;
-  padding-bottom: 42px;
+  padding-bottom: 0px;
+
   @media screen and (min-width: $tablet) {
-    padding-top: 76px;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    // padding-bottom: 10px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 30px;

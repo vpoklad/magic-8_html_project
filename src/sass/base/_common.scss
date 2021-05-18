@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -31,7 +32,6 @@ body {
   color: var(--fontColor);
   background-color: var(--bgBodyColor);
 
-
   font-family: var(--mainFontFamily), sans-serif;
   font-weight: 400;
   font-size: var(--mainFontSize);
@@ -42,12 +42,25 @@ body {
   background-position: top center, bottom 216px center;
   background-size: 100% 460px, 100% 1215px;
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .box {
+      background-image: url(../../src/images/bg/bg_top_mobile.svg),
+        url(../../src/images/bg/bg_botom_mobile.svg) !important;
+    }
+  }
+
   @media screen and (min-width: $tablet) {
     background-image: url(../../src/images/bg/bg_top_tablet.svg),
       url(../../src/images/bg/bg_botom_tablet.svg);
     background-repeat: no-repeat;
     background-position: top center, bottom 63px center;
     background-size: 100% 657px, 100% 1260px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .box {
+        background-image: url(../../src/images/bg/bg_top_tablet.svg),
+          url(../../src/images/bg/bg_botom_tablet.svg) !important;
+      }
+    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -56,6 +69,12 @@ body {
     background-repeat: no-repeat;
     background-position: top center, bottom center;
     background-size: 100% 1035px, 100% 1500px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .box {
+        background-image: url(../../src/images/bg/bg_top_desktop.svg),
+          url(../../src/images/bg/bg_botom_desktop.svg) !important;
+      }
+    }
   }
 }
 
