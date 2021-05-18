@@ -1,24 +1,32 @@
 .section--about-us {
   margin-left: auto;
   margin-right: auto;
+  margin-top: -15px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 60px;
+  }
+
+  // outline: 2px solid teal; //for testing
 }
 
 .about-us__flex {
   display: block;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   @media screen and (min-width: $tablet) {
     position: relative;
 
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+
+    padding-left: 30px;
+    padding-right: 30px;
   }
-
-  // @media screen and (min-width: $desktop) {
-  //   padding-top: 50px;
-  // }
-
-  // outline: 2px solid tomato;
 }
 
 .about-us__item {
@@ -36,15 +44,13 @@
   @media screen and (min-width: $tablet) {
     position: absolute;
     top: -10px;
-    left: -30px;
+    left: -15px;
   }
   @media screen and (min-width: $desktop) {
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: -60px;
   }
-
-  // outline: 2px solid green;
 }
 
 .about-us__title {
@@ -58,10 +64,10 @@
   }
 }
 
-#more {
-  display: none;
-}
-.morebtn {
+// #more {
+//   display: none;
+// }
+.more__btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -84,18 +90,31 @@
   }
 }
 .about-us__content {
-  margin-bottom: 15px;
-  line-height: 1.4;
+  @media screen and (min-width: $mobile) {
+    line-height: 1.4;
+
+    &.last {
+      margin-top: 15px;
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 1.57;
-    margin-bottom: 21px;
-  }
-}
-.desktop-full {
-  display: none;
 
-  @media screen and (min-width: $desktop) {
-    display: inline;
+    &.last {
+      margin-bottom: 15px;
+    }
+
+    &.hidden {
+      display: inline;
+    }
   }
 }
