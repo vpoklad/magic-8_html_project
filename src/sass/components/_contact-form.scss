@@ -19,9 +19,9 @@
     width: 100%;
     text-align: left;
 
-  @media screen and (min-width: $desktop) {
-    width: 430px;
-
+    @media screen and (min-width: $desktop) {
+      width: 430px;
+    }
   }
 }
 
