@@ -1,5 +1,5 @@
 .hamburger {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1279px) {
     display: none;
   }
   position: absolute;
@@ -19,9 +19,9 @@
   border: 0;
   margin: 0;
   overflow: visible;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     top: 11px;
-    right: 15px;
+    right: 52px;
   }
 }
 .hamburger:hover {

@@ -1,7 +1,5 @@
 .social-icons__list {
   display: inline-flex;
-  padding-left: 0;
-  padding-bottom: 35px;
 }
 .social-icons__item {
   & + .social-icons__item {
@@ -23,7 +21,7 @@
     fill: var(--hoverColor);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 24px;
     height: 19px;
   }

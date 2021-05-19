@@ -14,9 +14,14 @@
   &__wrap {
     max-width: 250px;
   }
+
   &__title {
     width: 100%;
     text-align: left;
+
+  @media screen and (min-width: $desktop) {
+    width: 430px;
+
   }
 }
 
