@@ -1,22 +1,18 @@
 
-
-<section id="contact" class="section contacts section-contact">
-    <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="contacts__text">We will answer any question!</p>
-        
-    <div class="contacts-form__wrap">
-        <form class="contacts-form">
-            <label class="contacts-form__field">
-                <input type="email" class="contacts-form__input" name="E-mail" placeholder="Email " />
-            </label>
-            <label class="contacts-form__field">
-                <input type="text" class="contacts-form__input" name="type_your_question"
-                    placeholder="Type your question" />                   
-                </form>
-                <button class="button" type="submit">Send</button>
-                
+<section id="contact" class="section contacts">
+    <div class="container contacts-container">
+      <div class="contacts__wrap">
+        <h2 class="section-title contacts__section-title">Contact</h2>
+            <form action="" method="POST" class="contacts-form" autocomplete="on">
+            <div class="contacts-form__wrap">
+                <div class="contacts__text" aria-label="form title Apply your personal info">We will answer any question!</div>
+                <input type="email" class="contacts-form__field" name="user_phone" placeholder="Email">
+                <input type="text" class="contacts-form__field" name="type your question" placeholder="Type your question" />
+            </div>
+            <button type="submit" class="button contacts-form__button">Send</button>
     </div>
-   
+    </form>
+     </div>
+
     </div>
 </section>
