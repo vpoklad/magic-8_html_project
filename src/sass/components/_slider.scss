@@ -1,5 +1,5 @@
 
-.slider-item {
+.sliderbig__item {
   width: 136px;
   display: flex;
   flex-direction: column;
@@ -7,10 +7,11 @@
 
   
 }
-.slider-item__imgage-wrap {
-  width: 100%;
-  
+.sliderbig__item__image-wrap {
+  width: 100%;  
   border-radius: 50%;
+  overflow: hidden;
+}
 
 
 /* Основные стили */
@@ -163,6 +164,4 @@
   font-weight: 600;
   color: #fff;
   mix-blend-mode: difference;
-  pointer-events: none;
-}
-
+  pointer-events: none;}
