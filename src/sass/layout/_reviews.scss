@@ -64,10 +64,16 @@
 }
 
 .reviewer-feedback-text--show {
-  display: none;
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
+  // display: none;
+  // @media screen and (max-width: 767px) {
+  //   display: block;
+  // }
+}
+
+.feedback {
+  max-width: 626px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .counter {
