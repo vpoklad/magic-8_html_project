@@ -1,84 +1,49 @@
-.contacts {
-  &__wrap {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 12px;
-    padding-top: 25px;
-  }
-}
-.contacts-form__input {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  &__wrap {
-    max-width: 250px;
-  }
-
-  &__title {
-    width: 100%;
-    text-align: left;
-
-  @media screen and (min-width: $desktop) {
-    width: 430px;
-
-  }
+.section--contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.contacts-container {
-  padding-top: 65px;
-  position: relative;
+.container-contact {
+  text-align: center;
 }
+
 .contacts-form {
-  &__button {
-    margin-top: 35px;
+  margin-top: 35px;
+  max-width: 265px;
+  @media screen and (min-width: $tablet) {
+    max-width: 410px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 430px;
   }
 
-  &__title {
-    font-size: 16px;
-    line-height: 1.25;
-    margin-bottom: 17px;
-    max-width: 200px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  &__field {
-    padding-bottom: 2px;
-    border: none;
-    font-family: Montserrat;
-    line-height: 1.2;
-    background-color: transparent;
-    color: var(--fontColor);
-    outline-color: var(--placeholderColor);
-    border-bottom: 1px solid var(--accentColor);
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    width: 265px;
+.contacts-form__field {
+  width: 100%;
+  padding-bottom: 2px;
+  border: none;
+  font-family: Montserrat;
+  line-height: 1.2;
+  background-color: transparent;
+  color: var(--fontColor);
+  outline-color: var(--placeholderColor);
+  border-bottom: 1px solid var(--accentColor);
 
-    @media screen and (min-width: 767px) {
-      width: 410px;
-    }
-    @media screen and (min-width: 1269px) {
-      width: 430px;
-    }
-  }
-
-  &__field:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 25px;
   }
-  &__field::placeholder {
+  &::placeholder {
     line-height: 1.25;
     color: var(--placeholderColor);
   }
-  &__field:invalid:not(:focus) {
+  &:invalid:not(:focus) {
     color: rgb(255, 0, 0);
   }
+}
 
-  &__button {
-    margin-top: 35px;
-  }
-  &__field:-webkit-autofill,
-  &__field:-webkit-autofill:hover,
-  &__field:-webkit-autofill:focus {
-    -webkit-text-fill-color: var(--activeColor);
-  }
+.text-area {
+  resize: none;
 }
