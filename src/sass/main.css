@@ -803,6 +803,22 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .reviewer-photo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviewer-photo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 136px;
+  }
+}
+
 .reviewer-rate__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,9 +855,22 @@ body {
   line-height: 4.64;
 }
 
+@media screen and (min-width: 1280px) {
+  .reviewer__name {
+    font-size: 16px;
+  }
+}
+
 .reviewer__feedback-text {
   max-width: 626px;
   text-align: center;
+  color: var(--fontColor);
+}
+
+@media screen and (min-width: 1280px) {
+  .reviewer__feedback-text {
+    font-size: 18px;
+  }
 }
 
 .reviewer-feedback-text--show {
@@ -888,7 +917,7 @@ body {
   right: -12px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .reviewer-photo--center {
     margin-left: auto;
     margin-right: auto;
@@ -896,7 +925,7 @@ body {
   }
 }
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 768px) {
   .reviewer-photo--center {
     margin-left: auto;
     margin-right: auto;
