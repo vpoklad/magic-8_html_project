@@ -8,8 +8,6 @@
 
 .reviewer-photo {
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 6px;
 
   @media screen and (min-width: $tablet) {
@@ -34,12 +32,10 @@
 
 .reviewers-cardset__item--show {
   display: none;
+
   @media screen and (min-width: $tablet) {
     display: block;
   }
-}
-
-.reviewer-rate__item {
 }
 
 .reviewer__name {
@@ -47,7 +43,7 @@
   font-weight: 500;
   font-style: italic;
   font-size: 14px;
-  line-height: 4.64;
+  line-height: 3;
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
@@ -58,16 +54,27 @@
   max-width: 626px;
   text-align: center;
   color: var(--fontColor);
+  @media screen and (min-width: $tablet) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   @media screen and (min-width: $desktop) {
     font-size: 18px;
   }
 }
 
 .reviewer-feedback-text--show {
-  display: none;
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
+  // display: none;
+  // @media screen and (max-width: 767px) {
+  //   display: block;
+  // }
+}
+
+.feedback {
+  max-width: 626px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .counter {
@@ -111,5 +118,6 @@
 
   @media screen and (min-width: $desktop) {
     width: 234px;
+    margin-top: 19px;
   }
 }
