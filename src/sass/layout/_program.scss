@@ -144,6 +144,89 @@
   }
 }
 
+.points__item::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px 80px;
+  position: absolute;
+  top: -25%;
+  left: 25%;
+
+  @media screen and (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+  }
+}
+
+.donut1::before {
+  background-image: url(/images/donuts/donut1_mobile.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/donuts/donut1_mobile@2x.png);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(/images/donuts/donut1_desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/donuts/donut1_desktop@2x.png);
+    }
+  }
+}
+
+.donut2::before {
+  background-image: url(/images/donuts/donut2_mobile.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/donuts/donut2_mobile@2x.png);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(/images/donuts/donut2_desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/donuts/donut2_desktop@2x.png);
+    }
+  }
+}
+
+.donut3::before {
+  background-image: url(/images/donuts/donut3_mobile.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/donuts/donut3_mobile@2x.png);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(/images/donuts/donut3_desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/donuts/donut3_desktop@2x.png);
+    }
+  }
+}
+
+.donut4::before {
+  background-image: url(/images/donuts/donut4_mobile.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/donuts/donut4_mobile@2x.png);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(/images/donuts/donut4_desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/donuts/donut4_desktop@2x.png);
+    }
+  }
+}
+
 .points__title {
   font-family: var(--titleFont);
   font-size: 18px;
@@ -186,16 +269,16 @@
   }
 }
 
-.points__picture {
-  position: absolute;
-  top: -25%;
-  left: 25%;
+// .points__picture {
+//   position: absolute;
+//   top: -25%;
+//   left: 25%;
 
-  @media screen and (max-width: 1279px) {
-    width: 77px;
-  }
+//   @media screen and (max-width: 1279px) {
+//     width: 77px;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    width: 97px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     width: 97px;
+//   }
+// }
