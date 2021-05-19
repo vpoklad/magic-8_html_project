@@ -1,22 +1,16 @@
 
-
-<section id="contact" class="section contacts section-contact">
-    <div class="container">
+<section id="contact" class="section--contact">
+    <div class="container container-contact">
+      
         <h2 class="section-title">Contact</h2>
-        <p class="contacts__text">We will answer any question!</p>
-        
-    <div class="contacts-form__wrap">
-        <form class="contacts-form">
-            <label class="contacts-form__field">
-                <input type="email" class="contacts-form__input" name="E-mail" placeholder="Email " />
-            </label>
-            <label class="contacts-form__field">
-                <input type="text" class="contacts-form__input" name="type_your_question"
-                    placeholder="Type your question" />                   
-                </form>
-                <button class="button" type="submit">Send</button>
+        <p>We will answer any question!</p>
+            <form class="contacts-form" >                            
+                <input type="email" class="contacts-form__field" name="user_mail" placeholder="Email" aria-label="Email" autocomplete="on" >
+                <textarea name="user_question" class="contacts-form__field text-area" id=""  rows="1" placeholder="Type your question" aria-label="text input"></textarea>
                 
-    </div>
-   
-    </div>
+            
+            <button type="submit" class="button">Send</button>
+    
+    </form>
+     </div>    
 </section>

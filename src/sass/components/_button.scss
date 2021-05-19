@@ -1,12 +1,12 @@
 .button {
   font-family: Caveat Brush;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   border-radius: 25px;
   min-width: 145px;
   border: none;
   font-size: 18px;
-  line-height: 1.61;
+  line-height: 1;
   text-align: center;
   background-color: var(--accentColor);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -20,8 +20,13 @@
   }
   cursor: pointer;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 24px;
+
+    font-size: 24px;
+    line-height: 65px;
+    line-height: 1;
+    min-width: 158px;
   }
 }
 
@@ -32,16 +37,15 @@
   margin: auto;
   margin-bottom: 45px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 31px;
     margin-left: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 158px;
     height: 45px;
     margin-bottom: 65px;
-    line-height: 1.4;
   }
 }
 
@@ -53,6 +57,7 @@
   padding: 0;
   font-family: var(--titleFont);
   font-size: 18px;
+  line-height: 3.6;
   color: var(--accentColor);
 
   &:hover,
@@ -63,7 +68,7 @@
     color: var(--activeColor);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }

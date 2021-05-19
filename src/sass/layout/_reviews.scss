@@ -1,8 +1,3 @@
-.section-reviews {
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .section-reviews__title {
   text-align: center;
 }
@@ -15,22 +10,13 @@
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 6px;
 
-  // @media screen and (max-width: 320px) {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   width: 110px;
-  // }
-
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: $tablet) {
     width: 110px;
   }
 
-  @media screen and (min-width: 1280px) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: $desktop) {
     width: 136px;
   }
 }
@@ -48,7 +34,7 @@
 
 .reviewers-cardset__item--show {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
   }
 }
@@ -63,7 +49,7 @@
   font-size: 14px;
   line-height: 4.64;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
   }
 }
@@ -72,7 +58,7 @@
   max-width: 626px;
   text-align: center;
   color: var(--fontColor);
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
   }
 }
@@ -115,21 +101,15 @@
 }
 
 .reviewer-photo--center {
-  @media screen and (max-width: 320px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 110px;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
 
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: $tablet) {
     width: 186px;
   }
 
-  @media screen and (min-width: 1280px) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: $desktop) {
     width: 234px;
   }
 }

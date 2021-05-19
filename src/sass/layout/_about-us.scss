@@ -1,19 +1,3 @@
-.section--about-us {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -15px;
-
-  @media screen and (min-width: $tablet) {
-    margin-top: 20px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-top: 60px;
-  }
-
-  // outline: 2px solid teal; //for testing
-}
-
 .about-us__flex {
   display: block;
   // margin-bottom: 20px;
@@ -58,43 +42,14 @@
   @media screen and (min-width: $tablet) {
     text-align: left;
   }
-  @media screen and (min-width: $desktop) {
-    font-size: 36px;
-    line-height: 1.8;
-  }
 }
 
-// #more {
-//   display: none;
-// }
-.more__btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-
-  font-family: var(--titleFont);
-  font-size: 18px;
-  line-height: 3.6;
-  color: var(--accentColor);
-  &:hover,
-  &:focus {
-    color: var(--hoverColor);
-  }
-  &:active {
-    color: var(--activeColor);
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
-}
 .about-us__content {
   @media screen and (min-width: $mobile) {
     line-height: 1.4;
 
     &.last {
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     &.hidden {
