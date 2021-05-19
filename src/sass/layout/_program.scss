@@ -136,6 +136,48 @@
   }
 }
 
+.points__item::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -25%;
+  left: 25%;
+
+  background-image: url(/images/donuts/donut1_mobile.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/bg@2x.jpg);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/tablet/bg.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/bg@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/desktop/bg.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/bg@2x.jpg);
+    }
+  }
+
+  @media screen and (max-width: 1279px) {
+    width: 77px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 97px;
+  }
+}
+
 .points__title {
   font-family: var(--titleFont);
   font-size: 18px;
@@ -178,16 +220,16 @@
   }
 }
 
-.points__picture {
-  position: absolute;
-  top: -25%;
-  left: 25%;
+// .points__picture {
+//   position: absolute;
+//   top: -25%;
+//   left: 25%;
 
-  @media screen and (max-width: 1279px) {
-    width: 77px;
-  }
+//   @media screen and (max-width: 1279px) {
+//     width: 77px;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    width: 97px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     width: 97px;
+//   }
+// }
