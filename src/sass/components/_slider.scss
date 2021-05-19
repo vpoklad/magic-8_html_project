@@ -19,114 +19,114 @@
 .slick-slide {
 }
 /* Слайд активный (показывается) */
-.slick-slide.slick-active {
-}
+
 /* Слайд основной */
 .slick-slide.slick-current {
 }
 /* Слайд по центру */
 .slick-slide.slick-center {
 }
-/* Клонированный слайд */
-.slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slick-arrow {
-}
-/* Стрелка влево */
-.slick-arrow.slick-prev {
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-.slick-dots {
-}
-.slick-dots li {
-}
-/* Активная точка */
-.slick-dots li.slick-active {
-}
-/* Элемент точки */
-.slick-dots li button {
-}
+
 /* Конкретный слайдер */
 .slider {
   position: relative;
   padding: 0px 50px;
-}
-
-.slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-  z-index: 10;
-  font-size: 0;
-  width: 40px;
-  height: 30px;
-}
-
-.slider .slick-arrow.slick-prev {
-  left: 0;
-  background: url('/images/reviews/pre_next_btn.svg') 0 0 no-repeat;
-}
-
-.slider .slick-arrow.slick-next {
-  right: 0;
-  background: url('/images/reviews/pre_next_btn.svg') 0 0 no-repeat;
-}
-
-.slider .slick-arrow.slick-disabled {
-  background-color: #fff; /*если инфинити отключить, то можем придавать кнопке, которая уже дальше не прокрутит слайды свой стиль*/
-}
-
-.slider .slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.slider .slick-dots li {
-  list-style: none;
-  margin: 0px 3px;
-}
-/* Активная точка */
-.slider .slick-dots li.slick-active button {
-  background-color: yellow;
-}
-/* Элемент точки */
-.slider .slick-dots li button {
-  font-size: 0;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: blue;
-}
-
-.slider__item {
-  transition: all 0.3s ease 0s;
-  opacity: 1;
-  text-align: center; /*выровняли по центру все что внутри слайдера*/
-}
-
-.slider__item.slick-center {
-  opacity: 1;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .sliderbig {
-  text-align: center;
+  position: relative;
+}
+
+.sliderbig .slick-arrow {
+  display: none !important;
+}
+.content {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .slick-arrow {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  font-size: 0;
+  width: 35px;
+  height: 1px;
+  background-color: transparent;
+  background-image: url(/images/reviews/pre_next_btn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
 }
 
 .slider__counter {
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  mix-blend-mode: difference;
-  pointer-events: none;
+  font-size: 14px;
+  color: var(--accentColor);
+}
+
+.slider__item {
+  transition: all 300ms linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__item.slick-center {
+  @media screen and(min-width: $tablet) {
+    transform: translateY(130px);
+  }
+}
+
+.reviewer-image {
+  border-radius: 50%;
+  transform: scale(0.59);
+  height: auto;
+  margin-bottom: 14px;
+}
+.slick-center .reviewer-image {
+  @media screen and(min-width: $tablet) {
+    width: 186px;
+    transform: scale(1);
+  }
+}
+
+.rating {
+  margin-bottom: 14px;
+}
+.reviewer__name {
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+.reviewer-feedback {
+  text-align: center;
+  height: 220px;
+  overflow-y: auto;
+  @media screen and(min-width: $tablet) {
+    height: 120px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 18px;
+    width: 623px;
+    height: 132px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
