@@ -1,14 +1,16 @@
-
-.sliderbig__item {
-  width: 136px;
+.slider {
+  position: relative;
+}
+.slider__item {  
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease 0s;
 
   
 }
-.sliderbig__item__image-wrap {
-  width: 100%;  
+.slider__image-wrap {
+  width: 110px;  
   border-radius: 50%;
   overflow: hidden;
 }
@@ -47,6 +49,7 @@
 }
 
 .reviewer-feedback {
+  display: none;
   max-width: 626px;
   text-align: center;
   color: var(--fontColor);
@@ -57,8 +60,8 @@
 /* Лента слайдов */
 .slick-track {
   display: flex;
-  align-items: flex-start;
-  overflow: hidden;
+  
+  // overflow: hidden;
  
 }
 /* Слайд */
@@ -95,73 +98,18 @@
   padding: 0px 50px;
 }
 
-.slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-  z-index: 10;
-  font-size: 100;
-  width: 40px;
-  height: 30px;
+.slick-next {
+  font-size: 16px;
 }
 
-.slider .slick-arrow.slick-prev {
-  left: 0;
-  // background: url("../img/arrow-left.svg") 0 0 no-repeat;
-}
 
-.slider .slick-arrow.slick-next {
-  right: 0;
-  // background: url("../img/arrow-right.svg") 0 0 no-repeat;
-}
-
-.slider .slick-arrow.slick-disabled {
-  background-color: #fff; /*если инфинити отключить, то можем придавать кнопке, которая уже дальше не прокрутит слайды свой стиль*/
-}
-
-.slider .slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.slider .slick-dots li {
-  list-style: none;
-  margin: 0px 3px;
-}
-/* Активная точка */
-.slider .slick-dots li.slick-active button {
-  background-color: yellow;
-}
-/* Элемент точки */
-.slider .slick-dots li button {
-  font-size: 0;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: blue;
-}
-
-.slider__item {
-  transition: all 0.3s ease 0s;
-  opacity: 1;
-  text-align: center; /*выровняли по центру все что внутри слайдера*/
-}
-
-.slider__item.slick-center {
-  opacity: 1;
-}
-
-.sliderbig {
-  text-align: center;
-}
 
 .slider__counter {
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: -35px;
+  left: 50%;
   z-index: 1;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  mix-blend-mode: difference;
-  pointer-events: none;}
+  font-size: 14px; 
+}
+  
+ 
