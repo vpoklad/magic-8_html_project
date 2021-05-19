@@ -18,12 +18,12 @@
             for registration</div>
           <input type="text" class="registration-form__field" name="user_name"
             placeholder="Your name" pattern="[A-Za-zА-Яа-яЁё\s]{2,20}"
-            title="The name must contain only letters and be between 2 and 20 characters long">
+            title="The name must contain only letters and be between 2 and 20 characters long" aria-label="Your name">
           <input type="tel" class="registration-form__field" name="user_phone"
             placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="Number input format ххх-ххх-хх-хх ">
-          <input type="email" class="registration-form__field" name="user_phone"
-            placeholder="Email">
+            title="Number input format ххх-ххх-хх-хх " aria-label="Phone number">
+          <input type="email" class="registration-form__field" name="user_mail"
+            placeholder="Email" aria-label="Email">
         </div>    
         <button type="submit" class="button registration-form__button">Register</button>
         
