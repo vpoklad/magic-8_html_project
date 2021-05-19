@@ -3,15 +3,10 @@
     display: flex;
     justify-content: space-between;
   }
-
-  @media screen and (min-width: $desktop) {
-    padding-bottom: 68px;
-  }
 }
 
 .section-program__title {
   text-align: center;
-  color: var(--fontColor);
 
   @media screen and (min-width: $tablet) {
     text-align: left;
@@ -78,7 +73,7 @@
   flex-basis: calc((100% -20px) / 2);
 
   @media screen and (min-width: $tablet) {
-    margin-right: 40px;
+    margin-right: 38px;
   }
 }
 
@@ -174,10 +169,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 8px;
+  width: 20px;
+  height: 18px;
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 11px;
+    width: 30px;
+    height: 24px;
   }
 }
 

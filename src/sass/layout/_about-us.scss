@@ -11,7 +11,6 @@
     margin-top: 60px;
   }
 }
-
 .about-us__flex {
   display: block;
   // margin-bottom: 20px;
@@ -63,37 +62,12 @@
   }
 }
 
-// #more {
-//   display: none;
-// }
-.more__btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-
-  font-family: var(--titleFont);
-  font-size: 18px;
-  line-height: 3.6;
-  color: var(--accentColor);
-  &:hover,
-  &:focus {
-    color: var(--hoverColor);
-  }
-  &:active {
-    color: var(--activeColor);
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
-}
 .about-us__content {
   @media screen and (min-width: $mobile) {
     line-height: 1.4;
 
     &.last {
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     &.hidden {
