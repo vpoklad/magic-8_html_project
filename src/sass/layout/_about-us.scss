@@ -10,8 +10,6 @@
   @media screen and (min-width: $desktop) {
     margin-top: 60px;
   }
-
-  // outline: 2px solid teal; //for testing
 }
 
 .about-us__flex {
@@ -61,6 +59,7 @@
   @media screen and (min-width: $desktop) {
     font-size: 36px;
     line-height: 1.8;
+    margin-bottom: 10px;
   }
 }
 
