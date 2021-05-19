@@ -23,7 +23,7 @@
   transform: translateY(0);
 }
 
-.navigation--mobile-menu {
+.navigation__mobile-menu {
   text-align: center;
   padding-top: 25px;
 }
@@ -33,7 +33,7 @@
   margin-bottom: 40px;
 }
 
-.navigation--link {
+.navigation__link {
   padding: 20px;
   font-family: Montserrat;
   font-style: normal;
@@ -48,7 +48,7 @@
   }
 }
 
-.navigation--item {
+.navigation__item {
   &:not(:last-child) {
     margin-bottom: 45px;
   }
