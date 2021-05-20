@@ -87,11 +87,12 @@ if ($slider.length) {
   var updateSliderCounter = function(slick, currentIndex) {
     currentSlide = slick.slickCurrentSlide() + 1;
     slidesCount = slick.slideCount;
-    $(sliderCounter).text(currentSlide + '/' +slidesCount)
+    $(sliderCounter).text(currentSlide + '/' +15)
   };
 
   $slider.on('init', function(event, slick) {
     $slider.append(sliderCounter);
+    
     updateSliderCounter(slick);
   });
 
