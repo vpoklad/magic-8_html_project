@@ -166,6 +166,9 @@
 .donut1::before {
   background-image: url(/images/donuts/donut1_mobile.png);
 
+  animation: rotateWithOrigin 8000ms linear 250ms infinite;
+  transform-origin: center center;
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/donuts/donut1_mobile@2x.png);
   }
@@ -179,8 +182,20 @@
   }
 }
 
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
 .donut2::before {
   background-image: url(/images/donuts/donut2_mobile.png);
+  animation: rotateWithOrigin 8000ms linear 250ms infinite;
+  transform-origin: center center;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/donuts/donut2_mobile@2x.png);
@@ -197,6 +212,8 @@
 
 .donut3::before {
   background-image: url(/images/donuts/donut3_mobile.png);
+  animation: rotateWithOrigin 8000ms linear 250ms infinite;
+  transform-origin: center center;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/donuts/donut3_mobile@2x.png);
@@ -213,6 +230,8 @@
 
 .donut4::before {
   background-image: url(/images/donuts/donut4_mobile.png);
+  animation: rotateWithOrigin 8000ms linear 250ms infinite;
+  transform-origin: center center;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/donuts/donut4_mobile@2x.png);
