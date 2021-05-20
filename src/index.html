@@ -27,6 +27,8 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -39,6 +41,7 @@
     <link rel="manifest" href="images/favicon/site.webmanifest" />
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
@@ -58,10 +61,18 @@
       <include src="./partials/contact.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
-
+    <a href="#" class="scrollup ">
+      <svg class="scrollup-icon">
+        <use href="./images/symbol-defs.svg#icon-up"></use>
+      </svg>
+    </a>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
     <script src="./js/menu-mobile.js"></script>
     <script src="./js/more.js"></script>
+    <script src="./js/scrollUp.js"></script>
+
   </body>
 </html>
