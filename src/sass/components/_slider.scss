@@ -1,0 +1,136 @@
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+.slider .slick-track {
+  @media screen and (min-width: $tablet) {
+    height: 390px;
+  }
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Конкретный слайдер */
+.slider {
+  position: relative;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 626px;
+  }
+}
+
+.sliderbig {
+  position: relative;
+}
+
+.sliderbig .slick-arrow {
+  display: none !important;
+}
+.content {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .slick-arrow {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  font-size: 0;
+  width: 35px;
+  height: 1px;
+  background-color: transparent;
+  background-image: url(/images/reviews/pre_next_btn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider__counter {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 14px;
+  color: var(--accentColor);
+}
+
+.slider__item {
+  transition: all 300ms linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__item.slick-center {
+  @media screen and(min-width: $tablet) {
+    transform: translateY(130px);
+  }
+}
+
+.reviewer-image {
+  border-radius: 50%;
+  transform: scale(0.59);
+  height: auto;
+  margin-bottom: 14px;
+}
+.slick-center .reviewer-image {
+  @media screen and(min-width: $tablet) {
+    width: 186px;
+    transform: scale(1);
+  }
+}
+
+.rating {
+  margin-bottom: 14px;
+}
+.reviewer__name {
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+.reviewer-feedback {
+  text-align: center;
+  height: 220px;
+  overflow-y: auto;
+  @media screen and(min-width: $tablet) {
+    height: 120px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 18px;
+    width: 623px;
+    height: 132px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
