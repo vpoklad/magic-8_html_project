@@ -111,11 +111,62 @@
   }
 }
 
+// .section-advantage__item {
+//   margin-top: 30px;
+//   margin-left: 30px;
+
+//   @media screen and (min-width: 768px) {
+//     flex-basis: calc((100% - 2 * 30px) / 2);
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     flex-basis: calc((100% - 120px) / 4);
+//   }
+
+//   &::before {
+//     display: block;
+//     content: '';
+//     height: 120px;
+//     margin-bottom: 30px;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-color: $bg-second;
+//     background-size: 70px 70px;
+//   }
+// }
+
+// @each $picture in antenna, clock, diagram, astronaut {
+//   .icon-#{$picture} {
+//     &::before {
+//       background-image: url('../images/#{$picture}.svg');
+//     }
+//   }
+// }
+
 .points__item {
   position: relative;
   width: 142px;
   height: 142px;
   margin-left: 6px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+    position: absolute;
+    top: -25%;
+    left: 25%;
+
+    @media screen and (min-width: $desktop) {
+      width: 100px;
+      height: 100px;
+      background-size: 100px 100px;
+    }
+  }
 
   &:nth-child(n + 3) {
     margin-top: 57px;
@@ -144,25 +195,6 @@
   }
 }
 
-.points__item::before {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80px 80px;
-  position: absolute;
-  top: -25%;
-  left: 25%;
-
-  @media screen and (min-width: $desktop) {
-    width: 100px;
-    height: 100px;
-    background-size: 100px 100px;
-  }
-}
-
 .donut1::before {
   background-image: url(/images/donuts/donut1_mobile.png);
 
@@ -179,16 +211,6 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/donuts/donut1_desktop@2x.png);
     }
-  }
-}
-
-@keyframes rotateWithOrigin {
-  0% {
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
-
-  100% {
-    transform: rotate3d(0, 0, 1, 360deg);
   }
 }
 
@@ -246,6 +268,16 @@
   }
 }
 
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
 .points__title {
   font-family: var(--titleFont);
   font-size: 18px;
@@ -287,17 +319,3 @@
     height: 24px;
   }
 }
-
-// .points__picture {
-//   position: absolute;
-//   top: -25%;
-//   left: 25%;
-
-//   @media screen and (max-width: 1279px) {
-//     width: 77px;
-//   }
-
-//   @media screen and (min-width: $desktop) {
-//     width: 97px;
-//   }
-// }
