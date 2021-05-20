@@ -144,7 +144,7 @@
   }
 
   &:hover::before {
-    animation: rotateWithOrigin 7000ms linear infinite;
+    animation: rotateWithOrigin 3000ms linear infinite;
     transform-origin: center center;
   }
 }
