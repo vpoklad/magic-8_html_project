@@ -142,6 +142,21 @@
     position: relative;
     bottom: -33px;
   }
+
+  &:hover::before {
+    animation: rotateWithOrigin 3000ms linear infinite;
+    transform-origin: center center;
+  }
+}
+
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
 }
 
 .points__item::before {
