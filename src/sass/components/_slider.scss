@@ -13,9 +13,15 @@
   display: flex;
 }
 .slider .slick-track {
+  margin-bottom: 10px;
+
   @media screen and (min-width: $tablet) {
-    height: 390px;
+    height: 290px;
+    margin-bottom: 0;
   }
+  // @media screen and (min-width: $desktop) {
+  //   height: 390px;
+  // }
 }
 /* Слайд */
 .slick-slide {
@@ -32,8 +38,8 @@
 /* Конкретный слайдер */
 .slider {
   position: relative;
+  margin-bottom: 15px;
   @media screen and (min-width: $tablet) {
-    margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
     max-width: 626px;
@@ -57,23 +63,29 @@
   margin-right: auto;
 }
 .content .slick-arrow {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   font-size: 0;
   width: 35px;
-  height: 1px;
+  height: 3px;
   background-color: transparent;
   background-image: url(/images/reviews/pre_next_btn.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    width: 37px;
+    height: 3px;
+  }
 }
 
 .slider__counter {
   position: absolute;
-  bottom: -15px;
+  bottom: -19px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -89,15 +101,26 @@
 }
 .slider__item.slick-center {
   @media screen and(min-width: $tablet) {
-    transform: translateY(130px);
+    transform: translateY(24px);
   }
 }
 
 .reviewer-image {
   border-radius: 50%;
-  transform: scale(0.59);
+  transform: scale(1);
   height: auto;
   margin-bottom: 14px;
+  margin-right: 50px;
+  margin-left: 50px;
+
+  @media screen and(min-width: $tablet) {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  @media screen and(min-width: $tablet) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 .slick-center .reviewer-image {
   @media screen and(min-width: $tablet) {
@@ -121,6 +144,7 @@
 }
 .reviewer-feedback {
   text-align: center;
+
   height: 220px;
   overflow-y: auto;
   @media screen and(min-width: $tablet) {
