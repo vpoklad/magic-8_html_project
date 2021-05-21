@@ -10,6 +10,8 @@
   bottom: 80px;
   right: 20px;
   opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &-icon {
     width: 50px;
@@ -56,4 +58,5 @@
 .showBtn {
   opacity: 1;
   transform: translateY(0);
+  pointer-events: initial;
 }
